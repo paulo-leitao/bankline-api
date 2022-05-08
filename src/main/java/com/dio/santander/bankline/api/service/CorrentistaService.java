@@ -15,6 +15,7 @@ import java.util.Date;
 public class CorrentistaService {
     @Autowired
     private CorrentistaRepository repository;
+
     public void save(NovoCorrentista novoCorrentista){
         Correntista correntista = new Correntista();
         correntista.setCpf(novoCorrentista.getCpf());

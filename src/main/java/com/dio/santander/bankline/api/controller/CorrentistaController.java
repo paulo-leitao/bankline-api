@@ -31,16 +31,6 @@ public class CorrentistaController {
         service.save(correntista);
     }
 
-    /*@DeleteMapping("/{id}")
-    public ResponseEntity<HttpStatus> deleteCorrentista(@PathVariable("id") Integer id){
-        try{
-            repository.deleteById(id);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        } catch (Exception e){
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }*/
-
     @DeleteMapping("/{id}")
     public void delete(@RequestBody DeletarCorrentista correntista) {service.delete(correntista);}
 

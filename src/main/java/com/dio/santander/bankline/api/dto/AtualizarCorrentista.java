@@ -1,5 +1,6 @@
 package com.dio.santander.bankline.api.dto;
 
+// Os dados que podem ser atualizados são somente o nome e cpf
 public class AtualizarCorrentista {
 
     private Integer id;
