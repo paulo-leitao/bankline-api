@@ -1,10 +1,14 @@
 package com.dio.santander.bankline.api.controller;
 
+import com.dio.santander.bankline.api.dto.AtualizarCorrentista;
+import com.dio.santander.bankline.api.dto.DeletarCorrentista;
 import com.dio.santander.bankline.api.dto.NovoCorrentista;
 import com.dio.santander.bankline.api.model.Correntista;
 import com.dio.santander.bankline.api.repository.CorrentistaRepository;
 import com.dio.santander.bankline.api.service.CorrentistaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,5 +30,21 @@ public class CorrentistaController {
     public void save(@RequestBody NovoCorrentista correntista){
         service.save(correntista);
     }
+
+    /*@DeleteMapping("/{id}")
+    public ResponseEntity<HttpStatus> deleteCorrentista(@PathVariable("id") Integer id){
+        try{
+            repository.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }*/
+
+    @DeleteMapping("/{id}")
+    public void delete(@RequestBody DeletarCorrentista correntista) {service.delete(correntista);}
+
+    @PutMapping("/{id}")
+    public void update(@RequestBody AtualizarCorrentista correntista) {service.update(correntista);}
 
 }
