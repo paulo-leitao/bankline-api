@@ -3,7 +3,7 @@
 ### REST API Java | Spring Boot | Postgre SQL
 
 
-Esta é a minha versão da API desenvolvida no projeto da **Santander Dev Week** em parceria com a [DIO._](https://github.com/digitalinnovationone) pelo professor [Gleyson Sampaio](https://www.linkedin.com/in/glysns/)
+Esta é a minha versão da API desenvolvida no projeto da **Santander Dev Week** em parceria com a [DIO._](https://github.com/digitalinnovationone) pelo professor [Gleyson Sampaio](https://github.com/glysns)
 
 ![image](https://user-images.githubusercontent.com/39228691/167758725-bb704cfa-9cd3-474d-95c9-bf9b96240b42.png)
 
