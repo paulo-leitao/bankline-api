@@ -12,7 +12,7 @@ Aqui propus a implementação das operações de CRUD para a tabela de correntis
 
 
 
-O repositório o original da api pode ser encontrar [neste link](https://github.com/digitalinnovationone/santander-dev-week-bankline-api).
+O repositório o original da API pode ser encontrado [neste link](https://github.com/digitalinnovationone/santander-dev-week-bankline-api).
 
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
